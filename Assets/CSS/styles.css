@@ -24,9 +24,10 @@ html {
   font-family: Montserrat;
 }
 
-/* body {
+body {
   margin: 0 !important;
-} */
+  padding: 0;
+}
 
 .advertorial{
   font-size: 12px;
@@ -34,15 +35,15 @@ html {
   box-shadow: 0px 5px 10px -8px rgba(0,0,0,0.5);
   max-width: auto;
   margin-left: auto;
-  margin-right: auto;
+  /* margin-right: auto; */
   padding-left: 15px;
-  padding-right: 15px;
+  /* padding-right: 15px; */
 }
 
 .impressum{
   font-size: 18px;
   padding-left: 15px;
-  padding-right: 15px;
+  /* padding-right: 15px; */
 }
 
 .no-padding {
@@ -60,8 +61,9 @@ html {
 @media screen and (max-width: 600px) {
   
   .container {
-    width: 80%;
+    width: 90%;
     /* margin-left: 10px; */
+    margin: 0 auto;
   }
 }
 
@@ -145,7 +147,7 @@ html {
   line-height: 149.329%;
 }
 
-.header-section .image-detail-section .top-bar .profile-user {
+ .image-detail-section .top-bar .profile-user {
   margin-right: 10px;
 }
 
@@ -445,14 +447,14 @@ html {
   margin: 0;
 }
 
-.footer-upper-section .footer-inner-section .links-section {
+.footer-upper-section .footer-inner-section  {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
 }
 
-.footer-upper-section .footer-inner-section .links-section a {
+.footer-upper-section .footer-inner-section  a {
   color: #0008c1;
   font-size: 14px;
   font-family: Montserrat;
@@ -498,18 +500,25 @@ html {
   color: #fff;
   background: #616161;
 }
-body{
-  position: absolute;
-	left:50%;
-	transform: translate(-50%);
-}
 
+
+@media screen and (min-width: 800px) {
+ 
+  body{
+    position: absolute;
+    left:50%;
+    transform: translate(-50%);
+  }
+}
 @media screen and (max-width: 800px) {
  
   body {
      width: 100%;
   position: absolute; 
-	 /* left:50%; */
+	 left:50%;
 	transform: translate(-50%); 
   }
+}
+html{
+  width: 100%;
 }
